@@ -1,0 +1,66 @@
+/* styles.css */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+.calculator {
+    background-color: #fff;
+    background-image: url("https://st.depositphotos.com/1001414/2721/i/450/depositphotos_27212119-stock-photo-school-supplies-isolated.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+}
+
+.display {
+    background-color:black;
+    color: #fff;
+    font-size: 2rem;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: right;
+    margin-bottom: 10px;
+    height: 50px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.btn {
+    background-color:pink;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    padding: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #e0e0e0;
+}
+
+.btn.equal {
+    background-color: #ff9500;
+    color: #fff;
+    grid-column: span 2;
+}
+
+.btn.equal:hover {
+    background-color: #e08900;
+}
+
+.btn.zero {
+    grid-column: span 2;
+}
